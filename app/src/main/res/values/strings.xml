@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">android-nearby-search</string>
+    <string name="app_explain">先上传位置，可搜索到该上传信息</string>
+</resources>
