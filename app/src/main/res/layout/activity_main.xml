@@ -3,15 +3,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <com.amap.api.maps.MapView
-        android:id="@+id/map"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+
     <LinearLayout
+        android:id="@+id/top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/border_bg"
         android:orientation="vertical">
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <EditText
+                android:id="@+id/userid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:editable="false"
+                android:text="XiaoMing"
+                android:hint="请设置用户名"/>
+            <Button
+                android:id="@+id/useridbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="切换用户ID"/>
+        </LinearLayout>
+        -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,13 +41,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="上传位置"/>
+                android:text="@string/upload"/>
             <Button
                 android:id="@+id/searchbtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="搜索附近上传"/>
+                android:text="@string/search"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -52,4 +72,10 @@
             android:textColor="#5566b8"
             android:textSize="15sp" />
     </RelativeLayout>
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:layout_above="@id/search_detail"/>
 </RelativeLayout>
