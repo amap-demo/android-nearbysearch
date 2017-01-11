@@ -11,7 +11,7 @@
 
 ## 效果图如下 ##
 
-![Screenshot](https://raw.githubusercontent.com/amap-demo/android-nearbysearch/master/resource/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/amap-demo/android-nearbysearch/master/apk/picture.png)
              
 ## 扫一扫安装##
-![Screenshot]( https://raw.githubusercontent.com/amap-demo/android-nearbysearch/master/resource/download.png)  
+![Screenshot]( https://raw.githubusercontent.com/amap-demo/android-nearbysearch/master/apk/download.png)  
