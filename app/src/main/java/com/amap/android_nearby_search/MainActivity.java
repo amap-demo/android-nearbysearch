@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //设置查询的时间
         query.setTimeRange(10000);
         //设置查询的方式驾车还是距离
-        query.setType(NearbySearchFunctionType.DRIVING_DISTANCE_SEARCH);
+        query.setType(NearbySearchFunctionType.DISTANCE_SEARCH);
         //调用异步查询接口
         NearbySearch.getInstance(getApplicationContext())
                 .searchNearbyInfoAsyn(query);
@@ -204,7 +204,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         "附近搜索结果: "
                         + resultcount + "个  "
                         +"用户ID：" + nearbyInfo.getUserID()
-                        + " \n距离：" + nearbyInfo.getDistance() + "米  驾车距离：" + nearbyInfo.getDrivingDistance()
+                        + " \n距离：" + nearbyInfo.getDistance() + "米 "
                         + "米 \n信息上传时间： " + date + " \n位置： "
                         + nearbyInfo.getPoint().toString());
         aMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(nearbyInfo.getPoint()
