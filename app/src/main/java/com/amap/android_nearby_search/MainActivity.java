@@ -204,7 +204,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         "附近搜索结果: "
                         + resultcount + "个  "
                         +"用户ID：" + nearbyInfo.getUserID()
-                        + " \n距离：" + nearbyInfo.getDistance() + "米 "
+                        + " \n距离：" + nearbyInfo.getDistance()
                         + "米 \n信息上传时间： " + date + " \n位置： "
                         + nearbyInfo.getPoint().toString());
         aMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(nearbyInfo.getPoint()
@@ -317,6 +317,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public boolean onMarkerClick(Marker marker) {
         NearbyInfo nearbyinfo = (NearbyInfo) marker.getObject();
         if (nearbyinfo != null){
+            showResult(nearbyinfo);
             resultLayout.setVisibility(View.VISIBLE);
         }
         return false;
